@@ -1,0 +1,23 @@
+﻿IF OBJECT_ID('dbo.[User]', 'U') IS NOT NULL
+BEGIN
+    DROP TABLE dbo.[User];
+END
+
+CREATE TABLE [User] (
+  id INT NOT NULL IDENTITY(-2147483648, 1),
+  conection_id INT NOT NULL,
+  [name] VARCHAR(45) NOT NULL,
+  email VARCHAR(45) NOT NULL,
+  PRIMARY KEY (id));
+
+  SELECT * FROM [User]
+
+  SELECT * FROM [Message]
+
+  SELECT * FROM INFORMATION_SCHEMA.TABLES
+
+
+
+
+  
+  

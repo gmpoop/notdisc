@@ -21,3 +21,67 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Archivos de sistema
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Archivos de compilación
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.ilk
+*.log
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Configuración de Visual Studio
+.vscode/
+.vs/
+.vscode/launch.json
+.vscode/settings.json
+.vscode/tasks.json
+
+# Configuración de usuario
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de NuGet
+*.nupkg
+*.snupkg
+.nuget/packages/
+.nuget/repository/
+
+# Archivos de paquetes y dependencias
+node_modules/
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Archivos de configuración específicos de entorno
+appsettings.*.json
+
+# Carpetas generadas automáticamente por Visual Studio
+_backup/
+_testresults/
+_recoveredfiles/
+_release/
+_publish/
+
+# Archivos generados por el sistema de documentación
+*.xml
+
+# Directorios de publicación de sitio
+wwwroot/
+
+NoTeams/Server/Migrations/
+
