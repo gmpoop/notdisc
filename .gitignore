@@ -83,3 +83,5 @@ _publish/
 # Directorios de publicación de sitio
 wwwroot/
 
+NoTeams/Server/Migrations/
+
