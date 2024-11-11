@@ -1,8 +1,8 @@
 // ConfigurationWindow.js
 import React from 'react';
-import ProfileTemplate from './Configurations/Prof';
-import EncryptionTemplate from './Configurations/Encryption';
-import LogOutTemplate from './Configurations/LogOut';
+import ProfileTemplate from '../Configurations/Prof/Prof';
+import EncryptionTemplate from '../Configurations/Encryption/Encryption';
+import LogOutTemplate from '../Configurations/LogOut/LogOut';
 
 function ConfigurationWindow({ type }) {
   let content;

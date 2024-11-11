@@ -1,7 +1,6 @@
 // src/components/ProfileTemplate.js
 import styled from 'styled-components';
-import UserItem from '../mainArea/UserItem';
-import ButtonTemplate from '../Button';
+import ButtonTemplate from '../../Elements/Button';
 import { FaPencilAlt } from 'react-icons/fa';
 
 
@@ -42,12 +41,7 @@ const ProfileTemplate = () => {
             <h1 className=''>Perfil</h1>
             <ProfileConfiguration className='space-y-10'>
                 <ImgConf className='hover:opacity-90'>
-                    <UserItem className = 'hover:opacity-90'
-                        urlImage="https://randomuser.me/api/portraits/men/32.jpg"
-                        size="150px"
-                        gap={false}
-                        >
-                    </UserItem>
+                   
                 </ImgConf>
                 <div className='w-full'>
                 <label>Nombre</label>

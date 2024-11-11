@@ -2,7 +2,6 @@
 // src/components/ChatArea.js
 import React from 'react';
 import styled from 'styled-components';
-import UserItem from './mainArea/UserItem';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
@@ -45,22 +44,6 @@ const ConfItem = styled.div`
   }
 `;
 
-const Icon = styled.div`
-  margin-right: 10px;
-`;
-
-const Button = styled.button`
-  padding: 10px 15px;
-  background-color: #2C2C2C;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #ff7a2f;
-  }
-`;
 
 function Configuration() {
 

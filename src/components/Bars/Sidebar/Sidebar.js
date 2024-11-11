@@ -2,7 +2,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaComments, FaUsers, FaCog, FaTrophy } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 

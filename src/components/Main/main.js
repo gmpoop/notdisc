@@ -1,15 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import Sidebar from './Bars/Sidebar';
-import ChatArea from './Messages/ChatArea';
-import ChatMenu from './Messages/ChatsMenu';
-import GroupMenu from './Messages/GroupMenu';
-import Topbar from './Bars/Topbar';
-import UserList from './Bars/UserList';
-import  Link from "../elements/elements";
-import  Configuration from "../Configuration";
-import  ConfigurationWindow from "../ConfigurationWindow";
-import { useLocation, useNavigate } from 'react-router-dom';
+import Sidebar from '../Bars/Sidebar/Sidebar';
+import ChatArea from '../Chat/ChatArea/ChatArea';
+import ChatMenu from '../Chat/ChatMenu/ChatMenu';
+import GroupMenu from '../Group/GroupMenu';
+import UserList from '../UserList/UserList';
+import  Configuration from "../Configurations/Configuration";
+import  ConfigurationWindow from "../Configurations/ConfigurationWindow";
+import { useLocation } from 'react-router-dom';
 
 
 const AppContainer = styled.div`
@@ -26,7 +24,7 @@ const ChatSection = styled.div`
 const Main = ({ children, isMyMessage }) => {
 
     const location = useLocation();
-    const navigate = useNavigate();
+    // const navigate = useNavigate(); //TODO: Implementar navegación
    
     const query = new URLSearchParams(location.search);
     const wind = query.get('wind'); // Obtiene el valor del parámetro de consulta 'type'
@@ -34,13 +32,13 @@ const Main = ({ children, isMyMessage }) => {
     const id = query.get('id'); // Obtiene el valor del parámetro de consulta 'type'
 
   
-    const handleAddParams = () => {
-      const newParams = new URLSearchParams(location.search);
-      newParams.set('wind', 'conf');
-      newParams.set('type', 'Profile');
+    // const handleAddParams = () => {
+    //   const newParams = new URLSearchParams(location.search);
+    //   newParams.set('wind', 'conf');
+    //   newParams.set('type', 'Profile');
   
-    //   navigate(`${location.pathname}?${newParams.toString()}`, { replace: true });
-    };
+    // //   navigate(`${location.pathname}?${newParams.toString()}`, { replace: true });
+    // };
 
     const renderContent = () => {
         
